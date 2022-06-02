@@ -1,7 +1,9 @@
-import { ValuesController } from "./Controllers/ValuesController.js";
+import { PokemonsController } from "./Controllers/PokemonsController.js";
+import { SandboxesController } from "./Controllers/SandboxController.js";
 
 class App {
-  valuesController = new ValuesController();
+  pokemonsController = new PokemonsController();
+  sandboxesController = new SandboxesController();
 }
 
 window["app"] = new App();

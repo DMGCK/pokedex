@@ -8,6 +8,7 @@
   <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>pokedex</title>
@@ -17,18 +18,51 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">pokedex</span>
+        <span class="ms-2"></span>
       </a>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+
+       <div class="col-3">
+         <div id="dex-list" class="row bg-secondary dex fw-bold text-center">
+           <h6 class="selectable m-0 p-1">Poki 1</h6>
+         </div>
+       </div>
+       <div id="detail-view" class="col-6">
+
+         <!-- <div class="bg-dark text-light m-2 px-4 p-2">
+           <div class="row text-center">
+             <div class="col-12">
+               <h1>name</h1>
+              </div>
+              <img class="p-2"src="https://pm1.narvii.com/6246/fcdf34bae5d56632c6b147e067c8d7443e737323_hq.jpg" alt="">
+              <div class="col-12">
+                more type stuff
+              </div>
+              <div class="col-12">
+                descriptions probbaly
+              </div>
+            </div>
+         </div> -->
+
+         
+
+       </div>
+       <div class="col-3">
+         <div class="m-1">
+           <div class="bg-secondary rounded px-1 pt-2 ">
+             <p class="m-0 fw-bold">Stuff and Junk</p>
+             <p class="m-0">Species of Pk</p>
+             <span class="btn btn-outline-danger m-2 mx-0 mdi mdi-delete"></span>
+             <span class="btn btn-outline-warning m-2 mx-0 mdi mdi-pencil"></span>
+           </div>
+         </div>
+       </div>
       </div>
     </div>
   </main>
@@ -38,6 +72,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
